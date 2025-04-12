@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/justjoseorg/ollama-intel-gpu/issues/new</Support>
   <Project/>
   <Overview>IPEX-LLM is an LLM acceleration library for Intel GPU (e.g., local PC with iGPU, discrete GPU such as Arc, Flex and Max), NPU and CPU&#xD;
 &#xD;
@@ -21,7 +21,7 @@ Make sure to have reBar enabled</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1744476056</DateInstalled>
+  <DateInstalled>1744477742</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>**Unraid 7+**</Requires>
