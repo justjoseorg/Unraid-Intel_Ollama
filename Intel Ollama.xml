@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Intel-IPEX-LLM-Ollama</Name>
+  <Repository>ghcr.io/justjoseorg/ollama-intel-gpu:main</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>IPEX-LLM is an LLM acceleration library for Intel GPU (e.g., local PC with iGPU, discrete GPU such as Arc, Flex and Max), NPU and CPU&#xD;
+&#xD;
+This Image is meant to be a one way stop for AI enthusiasts with an Intel iGPU or dGPU to run models using Ollama.&#xD;
+&#xD;
+Make sure to have reBar enabled</Overview>
+  <Category>AI: Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/justjoseorg/ollama-intel-gpu/main/doc/LlamaIntel.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1744476056</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>**Unraid 7+**</Requires>
+  <Config Name="Models" Target="/root/.ollama" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Models/ollama</Config>
+  <Config Name="GPU" Target="/dev/dri" Default="" Mode="" Description="" Type="Device" Display="always" Required="true" Mask="false">/dev/dri</Config>
+  <Config Name=" OLLAMA_HOST" Target=" OLLAMA_HOST:" Default="0.0.0.0" Mode="" Description="Allow connections from the Value" Type="Variable" Display="always" Required="true" Mask="false">0.0.0.0</Config>
+  <Config Name="ONEAPI_DEVICE_SELECTOR" Target="ONEAPI_DEVICE_SELECTOR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">level_zero:0</Config>
+  <Config Name="IPEX_LLM_NUM_CTX" Target="IPEX_LLM_NUM_CTX" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">16384</Config>
+  <Config Name="Ollama port" Target="11434" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">11434</Config>
+  <Config Name="OLLAMA_INTEL_GPU" Target="OLLAMA_INTEL_GPU" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="OLLAMA_NUM_GPU" Target="OLLAMA_NUM_GPU" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">999</Config>
+  <Config Name="ZES_ENABLE_SYSMAN" Target="ZES_ENABLE_SYSMAN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="OLLAMA_DEBUG" Target="OLLAMA_DEBUG" Default="" Mode="" Description="Enable Ollama debug logs" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <TailscaleStateDir/>
+</Container>
